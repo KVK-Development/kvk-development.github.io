@@ -6,7 +6,6 @@ import Section from "../components/Section";
 import Lede from "../components/Lede";
 import CTASection from "../components/CTASection";
 import Footer from "../components/Footer";
-import WorkExamples from "../components/WorkExamples";
 import NeuralConstellation from "../components/signatures/NeuralConstellation";
 import ServerRack from "../components/signatures/ServerRack";
 import SpotlightGrid from "../components/layouts/SpotlightGrid";
@@ -21,12 +20,6 @@ import {
   Check,
   ArrowRight,
 } from "lucide-react";
-
-const exampleCompanies = [
-  { name: "AI Client", url: "#" },
-  { name: "Startup X", url: "#" },
-  { name: "Project Y", url: "#" },
-];
 
 const onPremPoints = [
   "Run on your hardware, your VPC, or fully air-gapped",
@@ -158,7 +151,7 @@ export default function Solutions() {
           >
             <motion.div
               variants={fadeIn(0)}
-              className="mb-4 inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-redmesa/90 font-medium"
+              className="mb-4 flex w-fit mx-auto lg:mx-0 items-center gap-2 text-xs uppercase tracking-[0.25em] text-redmesa/90 font-medium"
             >
               <span className="h-px w-8 bg-redmesa/60" />
               On-Prem · A Feature, Not a Product
@@ -166,7 +159,7 @@ export default function Solutions() {
 
             <motion.h2
               variants={fadeIn(0.1)}
-              className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.05]"
+              className="text-center lg:text-left text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.05]"
             >
               Where It Runs Is Up to You.
             </motion.h2>
@@ -264,8 +257,6 @@ export default function Solutions() {
           ]}
         />
       </Section>
-
-      <WorkExamples companies={exampleCompanies} />
 
       <CTASection
         title="Integrate and Launch"

@@ -127,7 +127,7 @@ function Stepper({
   onChange: (n: number) => void;
 }) {
   const btn =
-    "w-8 h-8 grid place-items-center rounded-lg text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed";
+    "w-9 h-9 sm:w-8 sm:h-8 grid place-items-center rounded-lg text-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed";
   return (
     <div className="flex items-center gap-1.5">
       <motion.button
@@ -230,7 +230,7 @@ export default function PackageBuilder() {
       {/* blueprint grid atmosphere */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -inset-x-8 -inset-y-10 -z-0 rounded-[2rem] opacity-[0.5]"
+        className="pointer-events-none absolute -inset-x-2 -inset-y-6 sm:-inset-x-8 sm:-inset-y-10 -z-0 rounded-[2rem] opacity-[0.5]"
         style={{
           backgroundImage:
             "linear-gradient(to right, rgba(43,43,43,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(43,43,43,0.06) 1px, transparent 1px)",
@@ -250,7 +250,7 @@ export default function PackageBuilder() {
             variants={fadeIn(0)}
             className="relative overflow-hidden rounded-3xl p-[1.5px] bg-gradient-to-br from-redmesa via-redmesa/40 to-yellowmesa/60"
           >
-            <div className="relative rounded-[calc(1.5rem-1.5px)] bg-white p-7 lg:p-8">
+            <div className="relative rounded-[calc(1.5rem-1.5px)] bg-white p-5 sm:p-7 lg:p-8">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <span className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-redmesa font-semibold">
@@ -315,7 +315,7 @@ export default function PackageBuilder() {
               const Icon = addon.Icon;
               const isToggle = addon.kind === "toggle";
 
-              const cardClasses = `group flex items-center gap-4 rounded-2xl border p-4 lg:p-5 text-left w-full transition-colors duration-150 ${
+              const cardClasses = `group flex items-center gap-3 sm:gap-4 rounded-2xl border p-3.5 sm:p-4 lg:p-5 text-left w-full transition-colors duration-150 ${
                 active
                   ? "border-redmesa/50 bg-redmesa/[0.04] shadow-[0_10px_30px_-16px_rgba(255,75,58,0.5)]"
                   : "border-zinc-200 bg-white hover:border-zinc-300"
@@ -324,7 +324,7 @@ export default function PackageBuilder() {
               const inner = (
                 <>
                   <span
-                    className={`grid place-items-center w-12 h-12 rounded-xl shrink-0 transition-colors ${
+                    className={`grid place-items-center w-11 h-11 sm:w-12 sm:h-12 rounded-xl shrink-0 transition-colors ${
                       active
                         ? "bg-redmesa text-white"
                         : "bg-zinc-100 text-darkmesa group-hover:bg-zinc-200"
@@ -334,7 +334,7 @@ export default function PackageBuilder() {
                   </span>
 
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
                       <span className="font-semibold tracking-tight text-darkmesa">
                         {addon.name}
                       </span>
@@ -343,20 +343,22 @@ export default function PackageBuilder() {
                         <span className="text-zinc-400">/{addon.unit}</span>
                       </span>
                     </div>
-                    <p className="text-sm text-zinc-500 leading-snug mt-0.5 truncate">
+                    <p className="text-sm text-zinc-500 leading-snug mt-0.5 line-clamp-2">
                       {addon.desc}
                     </p>
                   </div>
 
-                  {isToggle ? (
-                    <Toggle on={active} />
-                  ) : (
-                    <Stepper
-                      value={count}
-                      max={addon.max}
-                      onChange={(n) => setCount(addon.id, n)}
-                    />
-                  )}
+                  <div className="shrink-0">
+                    {isToggle ? (
+                      <Toggle on={active} />
+                    ) : (
+                      <Stepper
+                        value={count}
+                        max={addon.max}
+                        onChange={(n) => setCount(addon.id, n)}
+                      />
+                    )}
+                  </div>
                 </>
               );
 

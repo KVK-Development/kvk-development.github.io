@@ -21,14 +21,14 @@ export default function Lede({ eyebrow, title, children, light = true }: LedePro
       >
         <motion.div
           variants={fadeIn(0)}
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-redmesa font-medium"
+          className="flex w-fit mx-auto lg:mx-0 items-center gap-2 text-xs uppercase tracking-[0.25em] text-redmesa font-medium"
         >
           <span className="h-px w-8 bg-redmesa/60" />
           {eyebrow}
         </motion.div>
         <motion.h2
           variants={fadeIn(0.1)}
-          className="text-4xl md:text-5xl font-bold tracking-tight text-darkmesa leading-tight"
+          className="text-center lg:text-left text-4xl md:text-5xl font-bold tracking-tight text-darkmesa leading-tight"
         >
           {title}
         </motion.h2>

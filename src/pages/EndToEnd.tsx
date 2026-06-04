@@ -21,9 +21,8 @@ import {
 } from "lucide-react";
 
 const exampleCompanies = [
-  { name: "DialDynamics", url: "https://dialdynamics.ca", logo: "/assets/dial-dynamics.png" },
+  { name: "DialDynamics", url: "https://app.dialdynamics.ca/signup", logo: "/assets/dial-dynamics.png" },
   { name: "Infinimatch", url: "https://infinimatch.app", logo: "/assets/infinimatch.png", fill: true },
-  { name: "Portfolio A", url: "#" },
 ];
 
 export default function EndToEnd() {

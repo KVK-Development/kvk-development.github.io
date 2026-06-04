@@ -63,7 +63,7 @@ export default function Hero({
 
   if (!signature) {
     return (
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section className="min-h-screen flex items-start lg:items-center justify-center relative overflow-hidden pt-28 pb-16 lg:py-0">
         <div className={`absolute inset-0 ${gradientMap[direction]}`} />
         <motion.div
           variants={staggerChildren(0.15)}
@@ -107,7 +107,7 @@ export default function Hero({
           variants={staggerChildren(0.12)}
           initial="hidden"
           animate="show"
-          className="lg:col-span-6 text-left"
+          className="lg:col-span-6 flex flex-col items-center text-center lg:items-start lg:text-left"
         >
           <motion.div variants={fadeIn(0)} className="mb-8">
             <Logo size={64} />

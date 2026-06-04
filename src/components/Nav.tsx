@@ -76,12 +76,13 @@ export default function Nav() {
           to="/"
           className="flex items-center gap-2 text-xl font-semibold tracking-tight text-darkmesa"
         >
-          <Home size={24} />
+          <Home size={24} className="shrink-0" />
           {!isHome && (
             <motion.span
               initial={{ opacity: 0, x: -8 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.0, ease: "easeOut" }}
+              className="hidden sm:inline-block whitespace-nowrap"
             >
               Red Mesa Development
             </motion.span>

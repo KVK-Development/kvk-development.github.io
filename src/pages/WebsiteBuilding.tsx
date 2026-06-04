@@ -9,9 +9,9 @@ import PackageBuilder from "../components/layouts/PackageBuilder";
 import ComparisonBlock from "../components/layouts/ComparisonBlock";
 
 const exampleCompanies = [
-  { name: "Local Café", url: "#" },
-  { name: "Fitness Studio", url: "#" },
-  { name: "Trades & Co", url: "#" },
+  { name: "Erina Bakery", url: "https://erinabakery.com", logo: "/assets/erina-bakery.png", fill: true },
+  { name: "A&S Tire Pros", url: "https://aandstirepros.com", logo: "/assets/as-tire-pros.png", fill: true },
+  { name: "DialDynamics", url: "https://dialdynamics.ca", logo: "/assets/dial-dynamics.png" },
 ];
 
 export default function WebsiteBuilding() {
