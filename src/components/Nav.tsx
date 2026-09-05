@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
-import { Home, LayoutTemplate, Brain, Rocket } from "lucide-react";
+import { Home, LayoutTemplate, Brain, Rocket, BookOpen } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useState } from "react";
 
@@ -72,22 +72,25 @@ export default function Nav() {
       className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md"
     >
       <div className="max-w-8xl mx-auto flex items-center justify-between py-5 px-6">
-        <Link
-          to="/"
-          className="flex items-center gap-2 text-xl font-semibold tracking-tight text-darkmesa"
-        >
-          <Home size={24} className="shrink-0" />
-          {!isHome && (
-            <motion.span
-              initial={{ opacity: 0, x: -8 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.0, ease: "easeOut" }}
-              className="hidden sm:inline-block whitespace-nowrap"
-            >
-              Red Mesa Development
-            </motion.span>
-          )}
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link
+            to="/"
+            className="flex items-center gap-2 text-xl font-semibold tracking-tight text-darkmesa"
+          >
+            <Home size={24} className="shrink-0" />
+            {!isHome && (
+              <motion.span
+                initial={{ opacity: 0, x: -8 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.0, ease: "easeOut" }}
+                className="hidden sm:inline-block whitespace-nowrap"
+              >
+                Red Mesa Development
+              </motion.span>
+            )}
+          </Link>
+          <NavPill to="/blog" Icon={BookOpen} label="Blog" />
+        </div>
 
         <div className="flex items-center gap-2">
           <NavPill to="/websites" Icon={LayoutTemplate} label="Website Building" />

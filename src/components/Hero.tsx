@@ -43,6 +43,7 @@ export default function Hero({
   cta,
   signature,
   eyebrow,
+  compact = false,
 }: {
   title: string;
   subtitle: string;
@@ -50,6 +51,7 @@ export default function Hero({
   cta?: React.ReactNode;
   signature?: React.ReactNode;
   eyebrow?: string;
+  compact?: boolean;
 }) {
   const defaultCta = (
     <motion.a
@@ -63,7 +65,9 @@ export default function Hero({
 
   if (!signature) {
     return (
-      <section className="min-h-screen flex items-start lg:items-center justify-center relative overflow-hidden pt-28 pb-16 lg:py-0">
+      <section
+        className={`${compact ? "" : "min-h-screen"} flex items-start justify-center relative overflow-hidden pt-28 pb-16`}
+      >
         <div className={`absolute inset-0 ${gradientMap[direction]}`} />
         <motion.div
           variants={staggerChildren(0.15)}

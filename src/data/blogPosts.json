@@ -1,0 +1,43 @@
+[
+  {
+    "slug": "why-startups-should-own-their-ai-infrastructure",
+    "title": "Why Startups Should Own Their AI Infrastructure",
+    "excerpt": "Renting AI through third-party APIs feels fast at first, but it quietly puts your product's future in someone else's hands. Here's why we build on-premises by default.",
+    "date": "2026-06-02",
+    "author": "Red Mesa Development",
+    "tags": ["AI", "Infrastructure"],
+    "content": [
+      "Every startup we talk to starts in the same place: a quick integration with a hosted AI API to prove out an idea. It works, and it works fast. But fast isn't the same as sustainable, and a surprising number of teams never revisit that early decision until it costs them.",
+      "Renting AI means renting your product's ceiling. Rate limits, pricing changes, data residency requirements, and model deprecations are all decisions made by someone else, on their timeline, not yours. When your core product experience depends on infrastructure you don't control, you're building on borrowed ground.",
+      "Owning your AI infrastructure, whether that's self-hosted open models, a private cloud deployment, or a fully air-gapped setup, changes the equation. You control cost at scale, you control data privacy, and you control the roadmap. It takes more work up front, but it's the difference between a product you run and a product that runs on someone else's terms.",
+      "This is why every engagement we take on starts with the same question: what does it look like for you to own this in five years? The answer shapes everything else we build."
+    ]
+  },
+  {
+    "slug": "the-real-cost-of-handoff-friction",
+    "title": "The Real Cost of Handoff Friction",
+    "excerpt": "Splitting frontend, backend, and AI work across separate teams creates seams. Those seams are where startups lose months.",
+    "date": "2026-05-14",
+    "author": "Red Mesa Development",
+    "tags": ["Engineering", "Process"],
+    "content": [
+      "It's common for early-stage startups to piece together their engineering team: a frontend contractor here, a backend agency there, and an AI consultant bolted on once the product needs 'the AI part.' Each piece might be built well in isolation, but the seams between them are where timelines quietly fall apart.",
+      "We've seen it play out the same way more than once. A feature that should take two weeks takes six because the team building the AI layer doesn't know how the backend models are structured, and the frontend team is blocked waiting on an API contract that keeps shifting. Nobody did anything wrong, the work was just split in a way that created unnecessary handoffs.",
+      "Building end to end, with one team responsible for the full stack, removes that friction entirely. There's no 'waiting on the other team' because there is no other team. Decisions about the database, the API, and the AI models get made together, by the people who have to live with the consequences of each one.",
+      "It's not the only way to build software, but for startups moving fast with limited runway, it's usually the fastest path from idea to something real."
+    ]
+  },
+  {
+    "slug": "what-makes-a-website-actually-convert",
+    "title": "What Makes a Website Actually Convert",
+    "excerpt": "A fast, good-looking site isn't the same as one that turns visitors into customers. A few things matter more than most teams think.",
+    "date": "2026-04-22",
+    "author": "Red Mesa Development",
+    "tags": ["Web Development", "Design"],
+    "content": [
+      "Most website projects optimize for the wrong thing. Teams spend weeks polishing animations and picking fonts while the actual path from 'visitor lands on page' to 'visitor takes action' gets an afternoon of attention right before launch.",
+      "Conversion isn't about looking impressive, it's about removing friction. That means a clear, single call to action above the fold instead of five competing ones. It means copy that speaks to a specific problem instead of vague language about being 'innovative' or 'best-in-class.' It means a page that loads in under a second, because every extra second of load time measurably costs you visitors.",
+      "The sites we build start with the action we want a visitor to take, and everything else, layout, copy, visuals, gets built to support that single goal. It's a less glamorous way to build a website, but it's the difference between a site that looks good in a portfolio and one that actually grows a business."
+    ]
+  }
+]

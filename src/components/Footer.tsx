@@ -11,6 +11,7 @@ export default function Footer() {
         <Link to="/websites">Website Building</Link>
         <Link to="/solutions">AI Integration Solutions</Link>
         <Link to="/end-to-end">End-to-End Development</Link>
+        <Link to="/blog">Blog</Link>
         <a href="mailto:contact@redmesa.dev">contact@redmesa.dev</a>
       </nav>
       <p>© {new Date().getFullYear()} Red Mesa Development. All rights reserved.</p>
