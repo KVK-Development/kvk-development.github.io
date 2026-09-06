@@ -2,4 +2,4 @@
 User-agent: *
 Allow:
 
-Sitemap: https://redmesa.dev/sitemap.xml
+Sitemap: https://redmesa.dev/public/sitemap.xml
