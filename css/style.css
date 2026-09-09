@@ -245,7 +245,7 @@ main { display: block; }
   align-items: flex-start;
   justify-content: center;
   min-height: 100vh;
-  padding: 7rem 1.5rem 4rem;
+  padding: 10rem 1.5rem 4rem;
 }
 .hero.hero-compact { min-height: 0; }
 .hero.hero-split { align-items: center; padding-top: 6rem; }
