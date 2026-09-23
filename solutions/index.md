@@ -1,8 +1,8 @@
 # Full Solutions. AI Included.
 
-AI Integration and Full Stack Software Development
+AI Integration and Software Development in Calgary
 
-Build production software with AI included: voice agents, custom trained models, semantic search, workflow integration, and full stack application development.
+Calgary AI integration and full stack development: voice agents, custom trained models, semantic search, workflow integration, and on-premises AI you own.
 
 We build AI into the core of your product — and run it on infrastructure you own, on-premises wherever it matters.
 
@@ -70,4 +70,4 @@ Open source models and infrastructure your team can actually own.
 
 Voice agents, custom models, semantic search — and the freedom to run all of it on hardware you own, not on someone else's meter. Pick the AI that fits your product, and we'll make it work on premises.
 
-[contact@redmesa.dev](mailto:contact@redmesa.dev) — or schedule a call, we'll figure out if we're a fit.
+[contact@redmesa.dev](mailto:contact@redmesa.dev) · [(587) 436-4615](tel:+15874364615) — email or call, we'll figure out if we're a fit.

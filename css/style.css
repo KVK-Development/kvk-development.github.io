@@ -553,6 +553,9 @@ em.accent { font-style: normal; color: var(--redmesa); }
 @media (min-width: 768px) { .cta-subtitle { font-size: 1.25rem; } }
 .cta-actions { margin-top: 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 2.5rem; }
 .cta-email { padding: 1.25rem 3rem; font-size: 1.125rem; }
+.cta-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+.cta-phone { padding: 1.25rem 2.5rem; font-size: 1.125rem; color: var(--white); border: 2px solid rgba(255,255,255,0.35); transition: border-color 0.2s, background-color 0.2s; }
+.cta-phone:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
 .cta-note { font-size: 0.875rem; color: var(--zinc-500); }
 
 /* ==========================================================================
@@ -724,6 +727,51 @@ em.accent { font-style: normal; color: var(--redmesa); }
 .process-desc { font-size: 0.75rem; color: var(--zinc-600); line-height: 1.6; max-width: 16ch; margin-inline: auto; }
 
 /* ==========================================================================
+   Home — scroll cue & offer cards
+   ========================================================================== */
+.hero-scroll { position: absolute; left: 0; right: 0; bottom: 1.25rem; z-index: 10; display: none; justify-content: center; }
+@media (min-width: 768px) and (min-height: 720px) { .hero-scroll { display: flex; } }
+.hero-scroll a { display: flex; flex-direction: column; align-items: center; gap: 0.375rem; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.3em; color: rgba(255,255,255,0.65); transition: color 0.2s; }
+.hero-scroll a:hover { color: var(--white); }
+.hero-scroll svg { animation: scroll-nudge 2s ease-in-out infinite; }
+@keyframes scroll-nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
+@media (prefers-reduced-motion: reduce) { .hero-scroll svg { animation: none; } }
+
+.offer-eyebrow { margin-inline: auto !important; }
+.offer-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+@media (min-width: 1024px) { .offer-grid { grid-template-columns: repeat(3, 1fr); } }
+.offer-grid > .reveal-item { height: 100%; }
+.offer-card {
+  position: relative; overflow: hidden; display: flex; flex-direction: column; height: 100%;
+  border-radius: 1.5rem; border: 1px solid var(--zinc-200); background: var(--white); padding: 2rem;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s var(--ease-out);
+}
+.offer-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(to right, var(--redmesa), var(--yellowmesa));
+  transform: scaleX(0); transform-origin: left; transition: transform 0.5s var(--ease-out);
+}
+.offer-card:hover { border-color: rgba(255,75,58,0.4); box-shadow: 0 12px 30px -12px rgba(255,75,58,0.3); transform: translateY(-4px); }
+.offer-card:hover::before { transform: scaleX(1); }
+.offer-head { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 1.5rem; }
+.offer-icon { width: 2.75rem; height: 2.75rem; border-radius: 0.75rem; background: rgba(255,75,58,0.1); color: var(--redmesa); display: grid; place-items: center; transition: background-color 0.2s, color 0.2s; }
+.offer-card:hover .offer-icon { background: var(--redmesa); color: var(--white); }
+.offer-number { font-size: 3rem; font-weight: 600; line-height: 1; color: rgba(255,75,58,0.15); font-variant-numeric: tabular-nums; transition: color 0.2s; }
+.offer-card:hover .offer-number { color: rgba(255,75,58,0.3); }
+.offer-kicker { font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.25em; color: var(--redmesa); font-weight: 600; }
+.offer-title { margin-top: 0.75rem; font-size: 1.375rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.3; color: var(--darkmesa); }
+.offer-desc { margin-top: 0.75rem; font-size: 0.9375rem; color: var(--zinc-600); line-height: 1.7; }
+.offer-points { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.625rem; }
+.offer-points li { display: flex; align-items: flex-start; gap: 0.625rem; font-size: 0.875rem; color: var(--zinc-700); line-height: 1.5; }
+.offer-points svg { flex-shrink: 0; margin-top: 0.1rem; color: var(--redmesa); }
+.offer-meta { margin-top: auto; padding-top: 1.5rem; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--zinc-500); font-weight: 500; }
+.offer-meta::before { content: ""; display: block; margin-bottom: 1rem; border-top: 1px dashed var(--zinc-300); }
+.offer-link { margin-top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; font-weight: 600; color: var(--darkmesa); transition: color 0.2s; }
+.offer-link svg { transition: transform 0.3s var(--ease-out); }
+.offer-card:hover .offer-link { color: var(--redmesa); }
+.offer-card:hover .offer-link svg { transform: translateX(4px); }
+
+/* ==========================================================================
    Blog
    ========================================================================== */
 .blog-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
@@ -737,8 +785,8 @@ em.accent { font-style: normal; color: var(--redmesa); }
 }
 .blog-card:hover { box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); }
 .blog-date { font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--redmesa); font-weight: 500; }
-.blog-card h2 { margin-top: 1rem; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; color: var(--darkmesa); transition: color 0.2s; }
-.blog-card:hover h2 { color: var(--redmesa); }
+.blog-card h2, .blog-card h3 { margin-top: 1rem; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; color: var(--darkmesa); transition: color 0.2s; }
+.blog-card:hover h2, .blog-card:hover h3 { color: var(--redmesa); }
 .blog-excerpt { margin-top: 1rem; color: var(--zinc-600); line-height: 1.7; flex: 1; }
 .blog-readmore { margin-top: 1.5rem; font-size: 0.875rem; font-weight: 500; color: var(--darkmesa); transition: color 0.2s; }
 .blog-card:hover .blog-readmore { color: var(--redmesa); }

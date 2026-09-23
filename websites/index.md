@@ -1,12 +1,12 @@
 # Websites You Own, Not Rent.
 
-Custom Business Websites, Flat $500
+Calgary Website Design, Flat $500
 
-Custom-designed business websites for a flat $500 — free hosting for life, no subscriptions, and full ownership of your code, domain, and accounts.
+Custom-designed websites for Calgary businesses at a flat $500 — free hosting for life, no subscriptions, and full ownership of your code, domain, and accounts.
 
 ## A real website. Not a rented one.
 
-We design and build custom landing pages for businesses — up to three pages, mobile-responsive, with a contact form and a Google review prompt — for a flat $500. No monthly fee, no subscription quietly climbing every year.
+We design and build custom landing pages for Calgary businesses — up to three pages, mobile-responsive, with a contact form and a Google review prompt — for a flat $500. No monthly fee, no subscription quietly climbing every year.
 
 When we're done, everything is yours: the code, the domain, every account. We host it free on GitHub Pages and hand you the keys. The only bill you'll ever see is your domain renewal — ten to twenty dollars a year, paid to your registrar, never to us.
 
@@ -64,4 +64,4 @@ Most site builders rent you a template and keep the keys. We build you the real 
 
 Pick your package above, or just tell us about your business — we'll send back a design and a flat quote. One price, free hosting, and a site that's yours to keep.
 
-[contact@redmesa.dev](mailto:contact@redmesa.dev) — or schedule a call, we'll figure out if we're a fit.
+[contact@redmesa.dev](mailto:contact@redmesa.dev) · [(587) 436-4615](tel:+15874364615) — email or call, we'll figure out if we're a fit.
