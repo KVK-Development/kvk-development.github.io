@@ -19,4 +19,5 @@ Contact: contact@redmesa.dev · (587) 436-4615 · Calgary, Alberta, Canada
 ## Optional
 
 - [Home](https://redmesa.dev/index.md): Overview of all services.
+- [About](https://redmesa.dev/about/index.md): Who we are, what we believe, and who we've built for.
 - [Blog index](https://redmesa.dev/blog/index.md)
