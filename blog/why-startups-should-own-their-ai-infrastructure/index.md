@@ -12,4 +12,4 @@ This is why every engagement we take on starts with the same question: what does
 
 ---
 
-[Back to Blog](/blog)
+[Back to Blog](/blog/)

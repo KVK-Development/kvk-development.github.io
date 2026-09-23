@@ -12,4 +12,4 @@ It's not the only way to build software, but for startups moving fast with limit
 
 ---
 
-[Back to Blog](/blog)
+[Back to Blog](/blog/)

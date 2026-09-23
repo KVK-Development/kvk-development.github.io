@@ -37,7 +37,7 @@ Most teams reach for GPT-4 by reflex. More often, a custom-trained model, a voic
 
 ## Where It Runs Is Up to You
 
-On-premises isn't a separate product — it's how we deploy. The hardware, the model weights, and the data can all sit inside your perimeter: no managed service in the hot path, no per-token meter, no vendor account standing between you and your own stack. The same goes for anything we build [end to end](/end-to-end).
+On-premises isn't a separate product — it's how we deploy. The hardware, the model weights, and the data can all sit inside your perimeter: no managed service in the hot path, no per-token meter, no vendor account standing between you and your own stack. The same goes for anything we build [end to end](/end-to-end/).
 
 - Run on your hardware, your VPC, or fully air-gapped
 - Own the model weights, runtime, and inference code

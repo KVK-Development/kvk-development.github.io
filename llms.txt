@@ -1,0 +1,22 @@
+# Red Mesa Development
+
+> Red Mesa Development is a software studio in Calgary, Alberta. We build custom business websites for a flat $500 CAD with free hosting, integrate AI into products (voice agents, custom-trained models, semantic search, on-premises AI), and develop full-stack applications end to end. Clients own all code, accounts, and infrastructure.
+
+Contact: contact@redmesa.dev · (587) 436-4615 · Calgary, Alberta, Canada
+
+## Services
+
+- [Website Building](https://redmesa.dev/websites/index.md): Custom-designed websites for Calgary businesses. $500 CAD flat for up to 3 pages, mobile responsive, contact form, free hosting on GitHub Pages, full ownership. Add-ons: extra pages, photography, Google Business Profile setup.
+- [AI Implementation](https://redmesa.dev/solutions/index.md): AI integration and full-stack development. Voice AI (Vapi, Deepgram), custom-trained models, semantic search with embeddings, and on-premises or air-gapped deployment of open-weight models (Llama, Mistral) on vLLM, TGI, Ollama, or llama.cpp.
+- [End-to-End Development](https://redmesa.dev/end-to-end/index.md): Full-stack, AI-focused application development from idea to production. New builds (typically 8–16 weeks), equity partnerships, and support retainers.
+
+## Blog
+
+- [Why Startups Should Own Their AI Infrastructure](https://redmesa.dev/blog/why-startups-should-own-their-ai-infrastructure/index.md)
+- [The Real Cost of Handoff Friction](https://redmesa.dev/blog/the-real-cost-of-handoff-friction/index.md)
+- [What Makes a Website Actually Convert](https://redmesa.dev/blog/what-makes-a-website-actually-convert/index.md)
+
+## Optional
+
+- [Home](https://redmesa.dev/index.md): Overview of all services.
+- [Blog index](https://redmesa.dev/blog/index.md)
