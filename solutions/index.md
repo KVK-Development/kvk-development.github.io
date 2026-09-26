@@ -1,8 +1,8 @@
 # Full Solutions. AI Included.
 
-AI Integration and Full Stack Software Development
+AI Integration and Software Development in Calgary
 
-Build production software with AI included: voice agents, custom trained models, semantic search, workflow integration, and full stack application development.
+Calgary AI integration and full stack development: voice agents, custom trained models, semantic search, workflow integration, and on-premises AI you own.
 
 We build AI into the core of your product — and run it on infrastructure you own, on-premises wherever it matters.
 
@@ -37,7 +37,7 @@ Most teams reach for GPT-4 by reflex. More often, a custom-trained model, a voic
 
 ## Where It Runs Is Up to You
 
-On-premises isn't a separate product — it's how we deploy. The hardware, the model weights, and the data can all sit inside your perimeter: no managed service in the hot path, no per-token meter, no vendor account standing between you and your own stack. The same goes for anything we build [end to end](/end-to-end).
+On-premises isn't a separate product — it's how we deploy. The hardware, the model weights, and the data can all sit inside your perimeter: no managed service in the hot path, no per-token meter, no vendor account standing between you and your own stack. The same goes for anything we build [end to end](/end-to-end/).
 
 - Run on your hardware, your VPC, or fully air-gapped
 - Own the model weights, runtime, and inference code
@@ -70,4 +70,4 @@ Open source models and infrastructure your team can actually own.
 
 Voice agents, custom models, semantic search — and the freedom to run all of it on hardware you own, not on someone else's meter. Pick the AI that fits your product, and we'll make it work on premises.
 
-[contact@redmesa.dev](mailto:contact@redmesa.dev) — or schedule a call, we'll figure out if we're a fit.
+[contact@redmesa.dev](mailto:contact@redmesa.dev) · [(587) 436-4615](tel:+15874364615) — email or call, we'll figure out if we're a fit.

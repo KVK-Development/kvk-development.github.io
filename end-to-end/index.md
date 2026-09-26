@@ -1,8 +1,8 @@
 # Built End to End.
 
-End-to-End Application Development
+End-to-End Application Development in Calgary
 
-Full-stack, AI-focused application development from idea to production — UI, API, and infrastructure, built and owned end to end.
+Calgary full-stack, AI-focused application development from idea to production — UI, API, and infrastructure, built and owned end to end.
 
 Full-stack AI-focused applications, from idea to production, with infrastructure you own.
 
@@ -43,4 +43,4 @@ A predictable path from a conversation to a shipped, owned product.
 
 You bring the vision, we bring the stack — frontend, backend, AI, and infrastructure. Built end to end so there's no handoff friction and no one holding your product hostage.
 
-[contact@redmesa.dev](mailto:contact@redmesa.dev) — or schedule a call, we'll figure out if we're a fit.
+[contact@redmesa.dev](mailto:contact@redmesa.dev) · [(587) 436-4615](tel:+15874364615) — email or call, we'll figure out if we're a fit.

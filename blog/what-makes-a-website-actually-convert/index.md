@@ -10,4 +10,4 @@ The sites we build start with the action we want a visitor to take, and everythi
 
 ---
 
-[Back to Blog](/blog)
+[Back to Blog](/blog/)
