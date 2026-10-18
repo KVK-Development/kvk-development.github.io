@@ -442,26 +442,40 @@ em.accent { font-style: normal; color: var(--redmesa); }
    ========================================================================== */
 .work-examples { padding: 5rem 1.5rem; }
 .work-list {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
   align-items: flex-start;
-  gap: 2.5rem clamp(1rem, 4vw, 3rem);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  overflow-x: auto;
+  /* room so hover lift/shadow isn't clipped by the scroll container */
+  padding: 1rem 2rem 1.5rem;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  /* soft fade at the edges hints that the row scrolls */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 2rem, #000 calc(100% - 2rem), transparent);
+          mask-image: linear-gradient(to right, transparent, #000 2rem, #000 calc(100% - 2rem), transparent);
 }
+.work-list::-webkit-scrollbar { display: none; }
+/* auto margins center the row when it fits, without clipping when it scrolls */
+.work-item:first-child { margin-left: auto; }
+.work-item:last-child { margin-right: auto; }
 .work-item {
-  width: 9rem;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  width: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  transition: transform 0.2s ease;
+  gap: 0.875rem;
+  transition: transform 0.25s cubic-bezier(.2,.8,.2,1);
 }
-.work-item:hover { transform: scale(1.08); }
-.work-item:active { transform: scale(0.95); }
+.work-item:hover { transform: translateY(-4px); }
+.work-item:active { transform: translateY(-1px); }
 .work-avatar {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 9999px;
   background: var(--white);
   border: 4px solid var(--darkmesa);
@@ -469,18 +483,24 @@ em.accent { font-style: normal; color: var(--redmesa); }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06), 0 6px 16px -6px rgba(0,0,0,0.15);
+  transition: box-shadow 0.25s, border-color 0.25s;
 }
-.work-item:hover .work-avatar { border-color: var(--redmesa); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.25); }
+.work-item:hover .work-avatar,
+.work-item:focus-visible .work-avatar {
+  border-color: var(--redmesa);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 14px 28px -10px rgba(0,0,0,0.25);
+}
+.work-item:focus-visible { outline: none; }
 .work-avatar img { width: 75%; height: 75%; object-fit: contain; }
 .work-avatar img.fill { width: 100%; height: 100%; object-fit: cover; }
 .work-avatar.initials { background: var(--darkmesa); color: var(--white); }
 .work-item:hover .work-avatar.initials { background: var(--redmesa); }
 .work-avatar .initials-text { font-size: 1.125rem; font-weight: 700; }
 .work-name {
-  font-size: 1rem;
+  /* font-size: 0.9375rem; */
   font-weight: 500;
+  letter-spacing: -0.01em;
   color: var(--zinc-700);
   display: flex;
   align-items: center;
@@ -490,6 +510,10 @@ em.accent { font-style: normal; color: var(--redmesa); }
   transition: color 0.2s;
 }
 .work-item:hover .work-name { color: var(--redmesa); }
+/* external-link icon stays out of the way until hover */
+.work-name svg { opacity: 0; transform: translate(-2px, 2px); transition: opacity 0.2s, transform 0.2s; }
+.work-item:hover .work-name svg,
+.work-item:focus-visible .work-name svg { opacity: 1; transform: none; }
 
 /* ==========================================================================
    Service card (3D wobble)
