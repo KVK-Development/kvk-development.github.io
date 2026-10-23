@@ -458,6 +458,8 @@ em.accent { font-style: normal; color: var(--redmesa); }
           mask-image: linear-gradient(to right, transparent, #000 2rem, #000 calc(100% - 2rem), transparent);
 }
 .work-list::-webkit-scrollbar { display: none; }
+/* auto-scrolling rows (see initWorkMarquee) — snapping would fight the drift */
+.work-list.is-marquee { scroll-snap-type: none; }
 /* auto margins center the row when it fits, without clipping when it scrolls */
 .work-item:first-child { margin-left: auto; }
 .work-item:last-child { margin-right: auto; }
